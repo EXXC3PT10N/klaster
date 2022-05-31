@@ -1,6 +1,3 @@
-# mgLogic
+# Klaster
 
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+** Front end **
