@@ -20,6 +20,9 @@ module.exports = {
     },
   },
   theme: {
+    borderRadius: {
+      DEFAULT: '0.625rem',
+    },
     colors: {
       // Base colors
       transparent: 'transparent',
@@ -27,30 +30,19 @@ module.exports = {
       'black': '#000000',
       // Custom Colors
       blue: {
-        DEFAULT: '#437AB5',
-        dark: '#1A3450',
-        light: '#BDD7EB'
-      },
-      red: {
-        DEFAULT: '#F2C0A3',
-        dark: '#B9562A',
-        light: '#F7E4D7'
-      },
-      mustard: {
-        DEFAULT: '#7F8046',
-        light: '#D8E4BF'
+        DEFAULT: "#08AEEA",
+        dark: "#302B3F",
       },
       green: {
-        DEFAULT: '#193E2F',
+        DEFAULT: '#23C878',
       },
-      beige: {
-        DEFAULT: '#F1EADF',
-        light: '#FFFAF4'
-      },
+      yellow: {
+        DEFAULT: '#EBB51E',   
+      }
     },
     fontFamily: {
-      'canela': ['"Canela"', 'sans-serif'],
-      'prophet': ['Prophet', 'sans-serif'],
+      'fira-sans': ['"Fira Sans"', 'sans-serif'],
+
     },
     letterSpacing: {
       normal: '0',
@@ -87,8 +79,8 @@ module.exports = {
           maxWidth: '912px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '1.688rem',
-          paddingRight: '1.688rem',
+          paddingLeft: '15px',
+          paddingRight: '15px',
           '@screen md': {
             maxWidth: '752px',
           },
@@ -99,7 +91,7 @@ module.exports = {
             maxWidth: '1260px',
           },
           '@screen 2xl': {
-            maxWidth: '1706px',
+            maxWidth: 'px',
           },
         }
       })
