@@ -1,0 +1,15 @@
+// Add any custom base CSS can go here
+
+// Foundation
+// =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
+html {
+    @apply antialiased;
+    text-rendering: optimizeLegibility;
+    @apply font-fira-sans;
+}
+.grid-custom {
+    @apply grid grid-cols-12;
+    &__gapped {
+       @apply gap-[30px];
+    }
+}
