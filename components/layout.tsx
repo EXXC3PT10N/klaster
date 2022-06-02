@@ -4,10 +4,10 @@ import Footer from "./footer"
 
 const Layout: React.FC<ScriptProps> = ({children}) => {
   return (
-    <div>
-      { children }
+    <>
+     { children }
       <Footer/>
-    </div>
+    </>
   )
 }
 

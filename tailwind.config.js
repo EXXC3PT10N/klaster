@@ -88,10 +88,10 @@ module.exports = {
             maxWidth: '950px',
           },
           '@screen xl': {
-            maxWidth: '1260px',
+            maxWidth: '1200px',
           },
           '@screen 2xl': {
-            maxWidth: 'px',
+            maxWidth: '1200px',
           },
         }
       })

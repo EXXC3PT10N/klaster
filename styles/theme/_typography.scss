@@ -1,3 +1,8 @@
+.text-h1 {
+    //68/80 
+    @apply text-[68px] leading-[80px] font-bold uppercase text-white;
+}
+
 .text-h5 {
     //21/26 
     @apply text-[21px] leading-[26px] font-medium;
