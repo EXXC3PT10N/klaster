@@ -22,6 +22,7 @@ module.exports = {
   theme: {
     borderRadius: {
       DEFAULT: '0.625rem',
+      sm: '5px',
     },
     colors: {
       // Base colors
@@ -29,6 +30,11 @@ module.exports = {
       'white': '#ffffff',
       'black': '#000000',
       // Custom Colors
+      grey: {
+        DEFAULT: "#D6D6D6",
+        light: "rgba(217, 217, 217, 0.2)",
+        dark: "#656565",
+      },
       blue: {
         DEFAULT: "#08AEEA",
         dark: "#302B3F",
