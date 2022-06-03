@@ -9,11 +9,12 @@ html {
     @apply text-blue-dark;
 }
 .grid-custom {
+    &__gapped {
+        @apply gap-[30px];
+    }
     @apply grid grid-cols-12;
 }
-.gapped {
-    @apply gap-[30px];
-}
+
 .underline-custom {
     @apply relative;
     &::after {
