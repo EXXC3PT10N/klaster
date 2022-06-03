@@ -1,20 +1,20 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import Hero from '../components/hero'
-import heroImg from '../public/assets/images/hero/wiadomosci-header.jpg'
-import placeholderImg from '../public/assets/images/wiadomosci-konkret-1.jpg'
+import Hero from '../../../components/hero'
+import heroImg from '../../../public/assets/images/hero/bazawiedzy-header.jpg'
+import placeholderImg from '../../../public/assets/images/wiadomosci-konkret.jpg'
 
-const Wiadomosci_single: NextPage = () => {
+const BazaWiedzy_single : NextPage = () => {
   return ( 
     <>
-        <Hero imgSrc={heroImg} text={"Wiadomości"} />
+        <Hero imgSrc={heroImg} text={"Baza wiedzy"} />
         <section className="header mb-[15px]">
             <div className="container">
                 <div className="text-breadcrumbs p-2.5 my-2.5">
                     <ul className="flex flex-wrap w-full">
                         <li><a className="" href="">Klaster</a></li>
                         <li><a className="" href="">Wiadomości</a></li>
-                        <li><a className="disabled active" href="">Tytuł wiadomości</a></li>
+                        <li><a className="disabled active" href="">Wiedza</a></li>
                     </ul>
                 </div>
                 <div className="text-single--filters pt-2.5 pb-5">
@@ -25,11 +25,10 @@ const Wiadomosci_single: NextPage = () => {
                         <li><a href="">Tagi</a></li>
                     </ul>
                 </div>
-                
                 <div className="flex">
                     <div className="w-full">
                         <div className="text-h2 underline-custom">
-                            <h2>Tytuł wybranej wiadomości</h2>
+                            <h2>Tytuł artykułu</h2>
                         </div>
                     </div>
                 </div>
@@ -72,4 +71,4 @@ const Wiadomosci_single: NextPage = () => {
   )
 }
 
-export default Wiadomosci_single
+export default BazaWiedzy_single
