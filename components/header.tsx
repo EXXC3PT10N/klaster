@@ -58,11 +58,11 @@ const Header: FC = () => {
 
   return (
     <header className="flex flex-wrap items-center pt-[30px] pr-[20px] pb-[20px] pl-[30px] bg-blue-dark text-white">
-      <div className="mr-7 shrink-0 flex items-center">
+      <div className="mr-7 shrink-0 flex items-center space-x-[10px]">
         <Link href='/'>
-          <a className="flex items-center space-x-4">
-            <Image src={logo} className='block' />
-            <Image src={headerText} className='block' />
+          <a className="flex items-center space-x-[10px]">
+            <Image src={logo} layout='raw' />
+            <Image src={headerText} layout='raw'/>
           </a>
           </Link>
           <Link href='/'>
@@ -73,9 +73,9 @@ const Header: FC = () => {
       </div>
       <ul className="flex mr-10 grow">
         {
-          navList.map(({ text, url }) => {
+          navList.map(({ text, url }, index) => {
             return (
-              <li className="text-[18px] leading-6">
+              <li className="text-[18px] leading-6" key={`nav-${index}`}>
                 <Link href={url}>
                   <a className="p-[10px]">{text}</a>
                 </Link>
