@@ -10,6 +10,7 @@ import heroImg from '../public/assets/images/hero/header.jpg'
 const Home: NextPage = () => {
   return ( 
     <>
+    <h1>Index</h1>
     </>
   )
 }

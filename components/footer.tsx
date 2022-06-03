@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import footerLogo from '../public/assets/images/icons/footer-logo.svg'
+import footerLogo from '../public/assets/images/icons/main-logo.svg'
 import locationIcon from '../public/assets/images/icons/Location.svg'
 import phoneIcon from '../public/assets/images/icons/Phone.svg'
 import emailIcon from '../public/assets/images/icons/Email.svg'
