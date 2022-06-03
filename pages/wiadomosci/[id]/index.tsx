@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import Hero from '../../../components/hero'
 import heroImg from '../../../public/assets/images/hero/wiadomosci-header.jpg'
 import placeholderImg from '../../../public/assets/images/wiadomosci-konkret-1.jpg'
@@ -12,8 +13,8 @@ const Wiadomosci_single: NextPage = () => {
             <div className="container">
                 <div className="text-breadcrumbs p-2.5 my-2.5">
                     <ul className="flex flex-wrap w-full">
-                        <li><a className="" href="">Klaster</a></li>
-                        <li><a className="" href="">Wiadomości</a></li>
+                        <li><Link href='/'><a className="" href="">Klaster</a></Link></li>
+                        <li><Link href='/wiadomosci'><a className="" href="">Wiadomości</a></Link></li>
                         <li><a className="disabled active" href="">Tytuł wiadomości</a></li>
                     </ul>
                 </div>
