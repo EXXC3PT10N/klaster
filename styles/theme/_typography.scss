@@ -2,8 +2,30 @@
     //68/80 
     @apply text-[68px] leading-[80px] font-bold uppercase text-white;
 }
-
+.text-h2 {
+    //38/44
+    @apply text-[42px] leading-[58px] font-bold text-blue-dark;
+}
+.text-h3 {
+    //38/44
+    @apply text-[38px] leading-[44px] font-medium text-blue-dark;
+}
 .text-h5 {
     //21/26 
     @apply text-[21px] leading-[26px] font-medium;
+}
+
+
+.text-single {
+    &--filters {
+        //12/20
+        @apply text-xs leading-5 font-medium text-blue-dark;
+    }
+}
+.text-breadcrumbs {
+    //14/20
+    @apply text-sm leading-[17px] font-light text-grey-dark;
+    .active {
+        @apply text-green font-bold;
+    }
 }
