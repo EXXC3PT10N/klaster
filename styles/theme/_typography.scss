@@ -14,12 +14,15 @@
     //21/26 
     @apply text-[21px] leading-[26px] font-medium;
 }
-
+.text-h4 {
+    //28/34
+    @apply text-[28px] leading-[34px] font-medium;
+}
 
 .text-single {
     &--filters {
         //12/20
-        @apply text-xs leading-5 font-medium text-blue-dark;
+        @apply text-xs leading-5 font-medium text-blue-dark; 
     }
 }
 .text-breadcrumbs {

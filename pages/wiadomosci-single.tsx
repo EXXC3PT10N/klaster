@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
+import FeaturedPost from '../components/featured-posts'
 import Hero from '../components/hero'
 import heroImg from '../public/assets/images/hero/wiadomosci-header.jpg'
 import placeholderImg from '../public/assets/images/wiadomosci-konkret-1.jpg'
@@ -19,10 +20,10 @@ const Wiadomosci_single: NextPage = () => {
                 </div>
                 <div className="text-single--filters pt-2.5 pb-5">
                     <ul className="flex flex-wrap w-full">
-                        <li><a href="">Kategoria</a></li>
-                        <li><a href="">Autor</a></li>
-                        <li><a href="">Data dodania</a></li>
-                        <li><a href="">Tagi</a></li>
+                        <li><a className="transition-[color] hover:text-green" href="">Kategoria</a></li>
+                        <li><a className="transition-[color] hover:text-green" href="">Autor</a></li>
+                        <li><a className="transition-[color] hover:text-green" href="">Data dodania</a></li>
+                        <li><a className="transition-[color] hover:text-green" href="">Tagi</a></li>
                     </ul>
                 </div>
                 
@@ -68,6 +69,7 @@ const Wiadomosci_single: NextPage = () => {
                 
             </div>
         </section>
+        <FeaturedPost/>
     </>
   )
 }

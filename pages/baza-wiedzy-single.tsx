@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Hero from '../components/hero'
+import FeaturedPost from '../components/featured-posts'
 import heroImg from '../public/assets/images/hero/bazawiedzy-header.jpg'
 import placeholderImg from '../public/assets/images/wiadomosci-konkret.jpg'
 
-const BazaWiedzy_single : NextPage = () => {
+const BazaWiedzy : NextPage = () => {
   return ( 
     <>
         <Hero imgSrc={heroImg} text={"Baza wiedzy"} />
@@ -19,10 +20,10 @@ const BazaWiedzy_single : NextPage = () => {
                 </div>
                 <div className="text-single--filters pt-2.5 pb-5">
                     <ul className="flex flex-wrap w-full">
-                        <li><a href="">Kategoria</a></li>
-                        <li><a href="">Autor</a></li>
-                        <li><a href="">Data dodania</a></li>
-                        <li><a href="">Tagi</a></li>
+                        <li><a className="transition-[color] hover:text-green" href="">Kategoria</a></li>
+                        <li><a className="transition-[color] hover:text-green" href="">Autor</a></li>
+                        <li><a className="transition-[color] hover:text-green" href="">Data dodania</a></li>
+                        <li><a className="transition-[color] hover:text-green" href="">Tagi</a></li>
                     </ul>
                 </div>
                 <div className="flex">
@@ -63,12 +64,11 @@ const BazaWiedzy_single : NextPage = () => {
                         <p>Neque integer tempor ipsum semper hendrerit diam. Nulla neque convallis nibh augue sed quis nibh. Orci scelerisque turpis eget tellus tortor molestie sit consectetur sit. Felis ut tempus elit mi, ut sed dui. Amet libero egestas velit suspendisse nulla egestas. Dui tellus purus bibendum placerat neque. Facilisis egestas odio tempus commodo. A nulla dolor purus consectetur interdum dui malesuada odio. Nunc eget lorem leo habitasse pellentesque. Dignissim lorem aliquet purus et pharetra commodo tellus augue. A eget viverra ornare risus fermentum. Turpis cursus malesuada id consectetur tempus ac, congue donec. Risus, massa faucibus tempor mus arcu.</p>
                     </div>
                 </div>
-                    
-                
             </div>
         </section>
+        <FeaturedPost/>
     </>
   )
 }
 
-export default BazaWiedzy_single
+export default BazaWiedzy

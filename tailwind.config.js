@@ -34,6 +34,7 @@ module.exports = {
         DEFAULT: "#D6D6D6",
         light: "rgba(217, 217, 217, 0.2)",
         dark: "#656565",
+        '100': "#EFEFEF",
       },
       blue: {
         DEFAULT: "#08AEEA",
