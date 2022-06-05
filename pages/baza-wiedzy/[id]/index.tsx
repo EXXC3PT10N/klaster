@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import FeaturedPost from '../../../components/featured-posts'
 import Hero from '../../../components/hero'
 import heroImg from '../../../public/assets/images/hero/bazawiedzy-header.jpg'
 import placeholderImg from '../../../public/assets/images/wiadomosci-konkret.jpg'
@@ -71,6 +72,7 @@ const BazaWiedzy_single: NextPage = () => {
 
                 </div>
             </section>
+            <FeaturedPost />
         </>
     )
 }

@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import FeaturedPost from '../../../components/featured-posts'
 import Hero from '../../../components/hero'
 import heroImg from '../../../public/assets/images/hero/wiadomosci-header.jpg'
 import placeholderImg from '../../../public/assets/images/wiadomosci-konkret-1.jpg'
@@ -69,6 +70,7 @@ const Wiadomosci_single: NextPage = () => {
                 
             </div>
         </section>
+        <FeaturedPost/>
     </>
   )
 }
