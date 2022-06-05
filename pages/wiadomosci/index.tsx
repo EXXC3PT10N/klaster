@@ -38,7 +38,27 @@ const Wiadomosci : NextPage = () => {
                 </div>
             </div>
         </section>
-        <FeaturedPost/>
+        <section className="posts bg-grey-light py-[50px]">
+            <div className="container">
+                <div className="posts-filters text-filters flex justify-between ">
+                    <ul className="flex flex-wrap">
+                        <li className="px-5 first:pl-0 last:pr-0"><a href="" className="active">Wszystkie</a></li>
+                        <li className="px-5 first:pl-0 last:pr-0"><a href="" className="">Kategoria 2</a></li>
+                        <li className="px-5 first:pl-0 last:pr-0"><a href="" className="">Kategoria 3</a></li>
+                        <li className="px-5 first:pl-0 last:pr-0"><a href="" className="">Kategoria 4</a></li>
+                        <li className="px-5 first:pl-0 last:pr-0"><a href="" className="">Kategoria 5</a></li>
+                    </ul>
+                </div>
+                <div className="pagination">
+                <div class="btn-group">
+                    <button className="btn">1</button>
+                    <button className="btn btn-active">2</button>
+                    <button className="btn">3</button>
+                    <button className="btn">4</button>
+                </div>
+                </div>
+            </div>
+        </section>
     </>
   )
 }

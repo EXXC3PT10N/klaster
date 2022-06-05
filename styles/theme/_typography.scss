@@ -28,7 +28,11 @@
 .text-breadcrumbs {
     //14/20
     @apply text-sm leading-[17px] font-light text-grey-dark;
-    .active {
-        @apply text-green font-bold;
-    }
+    
+}
+.text-filters {
+    @apply text-xl leading-[34px];
+}
+.active {
+    @apply text-green font-bold;
 }

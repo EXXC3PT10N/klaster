@@ -77,6 +77,7 @@ module.exports = {
     },
   },
   plugins: [
+   
     function ({
       addComponents
     }) {
@@ -103,8 +104,6 @@ module.exports = {
         }
       })
     },
-    function ({ addVariant }) {
-      addVariant('oneb4last', '&:nth-last-child(2)')
-    }
+    require("daisyui"),
   ],
 }

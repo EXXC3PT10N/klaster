@@ -66,7 +66,6 @@ const BazaWiedzy : NextPage = () => {
                 </div>
             </div>
         </section>
-        <FeaturedPost/>
     </>
   )
 }
