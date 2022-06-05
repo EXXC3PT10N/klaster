@@ -1,0 +1,29 @@
+.text-single--filters {
+    li {
+        &:not(:last-child) {
+            @apply relative flex;
+            &::after {
+                content: "·";
+                @apply text-[17px];
+                @apply relative block;
+                @apply px-[23px];
+            }
+        }
+    }
+}
+.disabled {
+    @apply cursor-default pointer-events-none;
+}
+.text-breadcrumbs {
+    li {
+        &:not(:last-child) {
+            @apply relative flex;
+            &::after {
+                content: "|";
+                @apply relative block;
+                @apply px-[30px];
+                @apply text-black;
+            }
+        }
+    }
+}

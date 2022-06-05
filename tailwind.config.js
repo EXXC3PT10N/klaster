@@ -22,6 +22,7 @@ module.exports = {
   theme: {
     borderRadius: {
       DEFAULT: '0.625rem',
+      sm: '5px',
     },
     colors: {
       // Base colors
@@ -29,6 +30,12 @@ module.exports = {
       'white': '#ffffff',
       'black': '#000000',
       // Custom Colors
+      grey: {
+        DEFAULT: "#D6D6D6",
+        light: "rgba(217, 217, 217, 0.2)",
+        dark: "#656565",
+        '100': "#EFEFEF",
+      },
       blue: {
         DEFAULT: "#08AEEA",
         dark: "#302B3F",
@@ -88,10 +95,10 @@ module.exports = {
             maxWidth: '950px',
           },
           '@screen xl': {
-            maxWidth: '1260px',
+            maxWidth: '1200px',
           },
           '@screen 2xl': {
-            maxWidth: 'px',
+            maxWidth: '1200px',
           },
         }
       })
