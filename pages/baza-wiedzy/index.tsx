@@ -38,7 +38,7 @@ const BazaWiedzy: NextPage = () => {
                                 <div className="flex items-center">
                                     <div className="w-full">
                                         <div className="text-h2">
-                                            <h2 className="underline-custom inline-block">Najnowsze wiadomości</h2>
+                                            <h2 className="underline-custom inline-block">Najnowsze artykuły</h2>
                                         </div>
                                     </div>
                                     <div className="arrows flex space-x-5">
@@ -60,7 +60,7 @@ const BazaWiedzy: NextPage = () => {
                                     </div>
                                     <div className="col-span-full lg:col-span-4 flex flex-col">
 
-                                        <ul className="filters text-single--filters flex flex-wrap pt-5">
+                                        <ul className="filters text-single--filters flex flex-wrap">
                                             <li><a href="">Kategoria</a></li>
                                         </ul>
                                         <div className="text-h3 mt-4 mb-[30px]">
@@ -77,7 +77,7 @@ const BazaWiedzy: NextPage = () => {
                                     </div>
                                     <div className="col-span-full lg:col-span-4 flex flex-col">
 
-                                        <ul className="filters text-single--filters flex flex-wrap pt-5">
+                                        <ul className="filters text-single--filters flex flex-wrap">
                                             <li><a href="">Kategoria</a></li>
                                         </ul>
                                         <div className="text-h3 mt-4 mb-[30px]">
@@ -91,19 +91,27 @@ const BazaWiedzy: NextPage = () => {
                     </div>
                 </div>
             </section>
-            <section className="posts bg-grey-light pb-[36px]">
+            <section className="posts bg-grey-light pt-[50px] pb-[36px]">
                 <div className="container">
-                    <div className='grid-custom'>
-                        <div className='col-span-full lg:col-span-4'>
-                            <div>
-                                <h1>Sortuj wg:</h1>
-                                <select name="sort">
-                                    <option value="najnowsze">Najnowsze</option>
-                                    <option value="najstarsze">Najstarsze</option>
-                                </select>
+                    <div className="grid-custom grid-custom__gapped">
+                        <div className="bg-white rounded col-span-full lg:col-span-4 flex flex-col h-fit p-2.5">
+                            <div className="dropdown">
+                                <label tabIndex={0} className="btn-link text-blue-dark font-semibold cursor-pointer flex items-center hover:no-underline">Wszystkie <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L12 15L17 10H7Z" fill="#302B3F" />
+                                </svg>
+                                </label>
+                                <ul tabIndex={0} className="dropdown-content menu menu-normal p-2 shadow-sm bg-white rounded w-52">
+                                    <li><a>Wszystkie</a></li>
+                                    <li><a>Kategoria 1</a></li>
+                                    <li><a>Kategoria 2</a></li>
+                                    <li><a>Kategoria 3</a></li>
+                                    <li><a>Kategoria 4</a></li>
+                                    <li><a>Kategoria 5</a></li>
+                                </ul>
                             </div>
                             <div>
-                                <h1>Szukaj</h1>
+                                <label className="btn-link text-blue-dark font-semibold cursor-pointer flex items-center hover:no-underline">Szukaj
+                                </label>
                                 <form>
                                     <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
                                     <div className="relative">
@@ -119,21 +127,87 @@ const BazaWiedzy: NextPage = () => {
                                 <ul>
                                     <li>
                                         <div className="collapse">
-                                            <Image src={arrowDropdown} />
                                             <input type="checkbox" className="peer" />
-                                            <div className="collapse-title  text-primary-content  peer-checked:text-secondary-content">
-                                                Click me to show/hide content
+                                            <div className="collapse-title p-0  text-primary-content  peer-checked:text-secondary-content">
+                                                <h1 className=''>Kategoria 1</h1>
+                                                <div className='flex absolute p-0 top-4 right-0 items-center pointer-events-none'>
+                                                    <Image src={arrowDropdown} className='' />
+                                                </div>
                                             </div>
                                             <div className="collapse-content  text-primary-content peer-checked:text-secondary-content">
-                                                <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                                                <ul>
+                                                    <li>
+                                                        <h1 className=''>Podkategoria 1</h1>
+                                                    </li>
+                                                    <li>
+                                                        <h1 className=''>Podkategoria 2</h1>
+                                                    </li>
+                                                </ul>
                                             </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="collapse">
+                                            <input type="checkbox" className="peer" />
+                                            <div className="collapse-title  text-primary-content  peer-checked:text-secondary-content">
+                                                <h1 className=''>Kategoria 2</h1>
+                                                <div className='flex absolute top-4 right-0 items-center pr-3 pointer-events-none'>
+                                                    <Image src={arrowDropdown} className='' />
+                                                </div>
+                                            </div>
+                                            <div className="collapse-content  text-primary-content peer-checked:text-secondary-content">
+                                                <ul>
+                                                    <li>
+                                                        <h1 className=''>Podkategoria 1</h1>
+                                                    </li>
+                                                    <li>
+                                                        <div className="collapse">
+                                                            <input type="checkbox" className="peer" />
+                                                            <div className="collapse-title  text-primary-content  peer-checked:text-secondary-content">
+                                                                <h1 className=''>Podkategoria 2</h1>
+                                                                <div className='flex absolute top-4 right-0 items-center pr-3 pointer-events-none'>
+                                                                    <Image src={arrowDropdown} className='' />
+                                                                </div>
+                                                            </div>
+                                                            <div className="collapse-content  text-primary-content peer-checked:text-secondary-content">
+                                                                <ul>
+                                                                    <li>
+                                                                        <h1 className=''>PodPodkategoria 1</h1>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h1 className=''>PodPodkategoria 2</h1>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="posts-main grid-custom grid-custom__gapped mb-[55px] col-span-full lg:col-span-6">
-                            <div className="col-span-full lg:col-span-6">
+                        <div className=" posts-main grid grid-cols-8 gap-[30px] mb-[55px] col-span-full lg:col-span-8">
+                            <div className="col-span-full lg:col-span-4">
+                                <div className="flex flex-col ">
+                                    <a href="">
+                                        <Image className="rounded-sm" src={PostImage} alt="post-image" />
+                                    </a>
+                                    <ul className="filters text-single--filters flex flex-wrap pt-5">
+                                        <li><a href="">Kategoria</a></li>
+                                    </ul>
+                                    <div className="text-h3 pt-4">
+                                        <a href="">
+                                            <h3>Lorem ipsum dolor sit consectetur</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-full lg:col-span-4">
                                 <div className="flex flex-col">
                                     <a href="">
                                         <Image className="rounded-sm" src={PostImage} alt="post-image" />
@@ -148,7 +222,7 @@ const BazaWiedzy: NextPage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-full lg:col-span-6">
+                            <div className="col-span-full lg:col-span-4">
                                 <div className="flex flex-col">
                                     <a href="">
                                         <Image className="rounded-sm" src={PostImage} alt="post-image" />
@@ -163,7 +237,7 @@ const BazaWiedzy: NextPage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-full lg:col-span-6">
+                            <div className="col-span-full lg:col-span-4">
                                 <div className="flex flex-col">
                                     <a href="">
                                         <Image className="rounded-sm" src={PostImage} alt="post-image" />
@@ -178,22 +252,7 @@ const BazaWiedzy: NextPage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-full lg:col-span-6">
-                                <div className="flex flex-col">
-                                    <a href="">
-                                        <Image className="rounded-sm" src={PostImage} alt="post-image" />
-                                    </a>
-                                    <ul className="filters text-single--filters flex flex-wrap pt-5">
-                                        <li><a href="">Kategoria</a></li>
-                                    </ul>
-                                    <div className="text-h3 pt-4">
-                                        <a href="">
-                                            <h3>Lorem ipsum dolor sit consectetur</h3>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-span-full lg:col-span-6">
+                            <div className="col-span-full lg:col-span-4">
                                 <div className="flex flex-col">
                                     <a href="">
                                         <Image className="rounded-sm" src={PostImage} alt="post-image" />
