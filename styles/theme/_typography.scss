@@ -23,6 +23,10 @@
     &--filters {
         //12/20
         @apply text-xs leading-5 font-medium text-blue-dark; 
+        a {
+            @apply transition-[color];
+            @apply hover:text-green;
+        }
     }
 }
 .text-breadcrumbs {

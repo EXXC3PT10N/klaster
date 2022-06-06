@@ -1,4 +1,28 @@
 module.exports = {
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#23c878",
+
+          "secondary": "#08aeea",
+
+          "accent": "#1FB2A6",
+
+          "base-100": "#fff",
+
+          "info": "#3ABFF8",
+
+          "success": "#36D399",
+
+          "warning": "#FBBD23",
+
+          "error": "#F87272",
+        },
+      },
+    ],
+  },
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
@@ -23,6 +47,10 @@ module.exports = {
     borderRadius: {
       DEFAULT: '0.625rem',
       sm: '5px',
+      none: '0px',
+    },
+    boxShadow: {
+      'sm' : '0px 0px 12px rgba(0, 0, 0, 0.1)',
     },
     colors: {
       // Base colors
@@ -35,6 +63,7 @@ module.exports = {
         light: "rgba(217, 217, 217, 0.2)",
         dark: "#656565",
         '100': "#EFEFEF",
+        '200': "#DFDFDF",
       },
       blue: {
         DEFAULT: "#08AEEA",
@@ -44,7 +73,7 @@ module.exports = {
         DEFAULT: '#23C878',
       },
       yellow: {
-        DEFAULT: '#EBB51E',   
+        DEFAULT: '#EBB51E',
       }
     },
     fontFamily: {
@@ -77,7 +106,7 @@ module.exports = {
     },
   },
   plugins: [
-   
+
     function ({
       addComponents
     }) {
